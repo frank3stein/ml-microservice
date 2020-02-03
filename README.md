@@ -16,27 +16,27 @@ Your project goal is to operationalize this working, machine learning microservi
 * Configure Kubernetes and create a Kubernetes cluster
 * Deploy a container using Kubernetes and make a prediction
 * Upload a complete Github repo with CircleCI to indicate that your code has been tested
+In this project, I am provided with the app.py file and asked to deploy as a containerized microservice. 
 
-You can find a detailed [project rubric, here](https://review.udacity.com/#!/rubrics/2576/view).
-
-**The final implementation of the project will showcase your abilities to operationalize production microservices.**
-
+I have written some scripts to run the docker image locally, which builds it and starts it connecting it to the local port 8000. I also wrote script to upload this image to make it easier to update the registry image.
 ---
 
 ## Setup the Environment
+1. Run `make setup`, which will create a virtual environment.
+2. Activate the venv, `source ~/.devops/bin/activate`
+3. `make install`
 
-* Create a virtualenv and activate it
-* Run `make install` to install the necessary dependencies
+To lint the project, you can run `make lint`
+
 
 ### Running `app.py`
 
-1. Standalone:  `python app.py`
+1. Standalone:  `python3 app.py`
 2. Run in Docker:  `./run_docker.sh`
 3. Run in Kubernetes:  `./run_kubernetes.sh`
 
-### Kubernetes Steps
 
-* Setup and Configure Docker locally
-* Setup and Configure Kubernetes locally
-* Create Flask app in Container
-* Run via kubectl
+To test it afterwards, you can run the script `./make_prediction.sh`
+
+
+To see the results, you can look into output_txt_files where the output of the docker container and kubernetes are saved. 

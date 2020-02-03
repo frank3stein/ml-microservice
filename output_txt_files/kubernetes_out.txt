@@ -1,1 +1,25 @@
-<paste log output from Kubernetes-mediated prediction, here>
+Authenticating with existing credentials...
+WARNING! Your password will be stored unencrypted in /home/emil/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+deployment.apps/prediction configured
+NAME                          READY   STATUS    RESTARTS   AGE   IP           NODE       NOMINATED NODE   READINESS GATES
+prediction-7c4c447b94-w7crd   1/1     Running   0          85s   172.17.0.2   minikube   <none>           <none>
+prediction-7c4c447b94-z82zw   1/1     Running   0          85s   172.17.0.3   minikube   <none>           <none>
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
+
