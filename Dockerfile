@@ -5,11 +5,6 @@ WORKDIR /app
 # Create a working directory
 
 ## Step 2:
-# Copy source code to working directory
-# Some examples
-# COPY . app.py /app/
-# COPY . flask_app/web.py /app/
-# COPY . nlib /app/
 COPY . . 
 ## Step 3:
 # Install packages from requirements.txt
@@ -21,5 +16,5 @@ RUN pip install --upgrade pip &&\
 EXPOSE 80
 ## Step 5:
 # Run app.py at container launch
-CMD [ "python3", "app.py" ]
+CMD ["python3", "app.py"]
 
